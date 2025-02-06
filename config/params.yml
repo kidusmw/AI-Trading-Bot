@@ -1,0 +1,13 @@
+# Model and Data Settings
+training:
+  epochs: 100
+  batch_size: 32
+  learning_rate: 0.001
+
+data:
+  lookback: 100   # Number of historical bars to fetch
+  train_test_split: 0.2
+
+model:
+  input_size: 30  # Number of features (adjust based on your data)
+  checkpoint: "models/trading_model.pth"
